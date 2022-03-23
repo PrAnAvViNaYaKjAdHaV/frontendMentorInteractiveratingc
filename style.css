@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: #121417;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #252d37;
+  max-width: 28rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.container .img {
+  max-width: 3.2rem;
+  min-height: 3.2rem;
+  background: #121417;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.container .content {
+  margin: 2rem 1rem;
+}
+
+.container .content h1 {
+  color: white;
+}
+
+.container .content p {
+  margin-top: 1rem;
+  line-height: 1.3rem;
+  color: #7c8798;
+  font-size: 1.2rem;
+}
+
+.container .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 22rem;
+    margin: 1rem;
+  }
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0rem;
+}
+
+.review P {
+  height: 3rem;
+  width: 3rem;
+  padding: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  background: #121417;
+  color: #7c8798;
+  font-size: 1.2rem;
+}
+
+.review P:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.review .grey {
+  background-color: #7c8798;
+  color: white;
+}
+
+button {
+  width: 100%;
+  margin: 1rem auto;
+  height: 3rem;
+  background-color: #fb7413;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+}
+
+button:hover {
+  background: white;
+  color: #fb7413;
+}
+
+.submitContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submitContent span {
+  margin: 2rem;
+  font-size: 1.2rem;
+  background-color: #121417;
+  color: #fb7413;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .submitContent span {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+}
+
+.submitContent div {
+  text-align: center;
+}
+
+.submitContent div h1 {
+  color: white;
+}
+
+.submitContent div p {
+  color: #959eac;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

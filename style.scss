@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+
+
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light_Grey: hsl(217, 12%, 63%);
+$Medium_Grey: hsl(216, 12%, 54%);
+$Dark_Blue: hsl(213, 19%, 18%);
+$Very_Dark_Blue: hsl(216, 12%, 8%);
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    background-color:$Very_Dark_Blue;
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: $Dark_Blue;
+    max-width:28rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    .img{
+      max-width: 3.2rem;
+      min-height: 3.2rem;
+      background: $Very_Dark_Blue;
+      border-radius: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: center;  
+      margin: 1rem;
+    }
+    .content{
+     margin: 2rem 1rem;
+     h1{
+         color: white;
+     }
+     p{
+         margin-top: 1rem;
+         line-height: 1.3rem;
+         color: $Medium_Grey;
+         font-size: 1.2rem;
+     }
+    }
+    .submit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media only screen and (max-width: 450px){
+          max-width: 22rem;
+          margin: 1rem;
+    }
+}
+
+.review{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0rem;
+    P{
+        height: 3rem;
+        width: 3rem;
+        padding: 1.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background:$Very_Dark_Blue;
+        color: $Medium_Grey;
+        font-size: 1.2rem;
+        &:hover{
+            background-color: $Orange;
+            color: white;
+        }
+        
+    }
+    .grey{
+        background-color:$Medium_Grey;
+        color: $White;
+    }
+
+    
+}
+
+button{
+    width: 100%;
+    margin: 1rem auto;
+    height: 3rem;
+    background-color: $Orange;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    &:hover{
+        background: white;
+        color:$Orange;
+    }
+}
+
+// submitContent 
+
+.submitContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        margin:2rem;
+        font-size: 1.2rem;
+        background-color:$Very_Dark_Blue;
+        color: $Orange;
+        padding: 1rem;
+        border-radius: 2rem;
+        @media only screen and (max-width: 450px){
+            font-size: 1rem;
+            margin: 1rem;
+      }
+    }
+    div{
+        text-align: center;
+        h1{
+            color: $White;
+        }
+        p{
+            color: $Light_Grey;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
